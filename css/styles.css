@@ -53,7 +53,6 @@ button {
     text-decoration: none;
 }
 
-/* Цвет текста на все тело */
 body {
     background-color: var(--white);
     color: var(--slate);
@@ -110,10 +109,10 @@ body {
 }
 
 .header-logo-accent {
-    color:#2E2F42;
+    color:var(--navy-blue);
 }
 
-/* Стилизирование кнопок */
+/* Навигация */
 .navigation-list {
     display: flex;
     align-items: center;
@@ -124,7 +123,7 @@ body {
 .navigation-link {
     display: inline-block;
     padding: 24px 0;
-    color: #2E2F42;
+    color: var(--navy-blue);
 
     font-weight: 500;
     font-size: 16px;
@@ -135,7 +134,7 @@ body {
 .navigation-link:hover,
 .navigation-link:focus,
 .navigation-link:active {
-    color: #404BBF;
+    color: var(--ocean);
 }
 
 /* Контактная информация */
@@ -150,20 +149,23 @@ body {
 }
 
 .address-link {
-    color: #434455;
-    
+    color: var(--slate);  
 }
 
 .address-link:hover,
 .address-link:focus,
 .address-link:active {
-    color:#404BBF;
+    color: var(--ocean);
 }
 
-/* Главная секция страницы */
+/* Главная секция 1-й страницы */
 
-.hero {
-    background: #2E2F42;
+.hero 
+
+.hero-wrap {
+    background: var(--navy-blue);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/page-1/hero-img.jpg);
+
     padding: 188px 0;
     text-align: center;
 }
@@ -172,16 +174,13 @@ body {
     max-width: 496px;
     margin: 0 auto;
     margin-bottom: 48px;
-    color: #FFFFFF;
+    color: var(--white);
 
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
-
-    
-
 }
 
 .hero-button {
@@ -192,7 +191,7 @@ body {
     margin: 0 auto;
     
     
-    background-color: #4D5AE5;
+    background-color: var(--iris);
     border-radius: 4px;
     color: var(--white);
 
@@ -207,7 +206,7 @@ body {
 .hero-button:hover,
 .hero-button:focus,
 .hero-button:active {
-    background-color: #404BBF;
+    background-color: var(--ocean);
     color: var(--white);
 
 }
@@ -233,7 +232,7 @@ body {
 }
 
 .features-list-title {
-    color: #2E2F42;
+    color: var(--grey);
     margin-bottom: 8px;
 
     font-weight: 500;
@@ -242,6 +241,19 @@ body {
     letter-spacing: 0.02em;
 
 }
+
+.features-icon-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    background-color: var(--cloud);
+    margin-bottom: 8px;
+}
+.features-item-icon 
+
+
  /* We doing */
 .we-doing-section {
     padding-bottom: 120px;
@@ -263,7 +275,7 @@ body {
 
 /* Team-list */
 .team-section {
-    background-color: #F4F4FD;
+    background-color: var(--cloud);
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -290,7 +302,7 @@ body {
 
 }
 .team-card-title {
-    color: #2E2F42;
+    color: var(--grey);
     margin-bottom: 8px;
 
     font-weight: 500;
@@ -301,10 +313,34 @@ body {
 }
 
 .team-card-text {
-    /* margin-bottom: 32px; */
-
     text-align: center;
+    margin-bottom: 8px;
 }
+
+.team-socials-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.team-socials-item 
+
+.team-social-wrap {
+    background-color: var(--iris) ;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.team-social-wrap:hover,
+.team-social-wrap:focus {
+    background-color: var(--green);
+}
+.team-social-icon {
+    color: var(--cloud);
+}
+
+
 
 /* Portfolio */
 .portfolio {
@@ -331,8 +367,8 @@ body {
     text-align: center;
 
     border: 1px solid #e7e9fc;
-    background-color: #F4F4FD;
-    color: #4D5AE5;
+    background-color: var(--cloud);
+    color: var(--iris);
 
     font-family: Roboto, sans-serif;
     font-weight: 500;
@@ -344,7 +380,7 @@ body {
 .portfolio-btn-link:hover,
 .portfolio-btn-link:focus {
     border: 1px solid transparent;
-    background-color: #404BBF;
+    background-color: var(--ocean);
     color:  var(--white);
 
 }
@@ -355,7 +391,7 @@ body {
     column-gap: 24px;
     row-gap: 48px;
     
-    color: #2E2F42;
+    color: var(--grey);
     
     font-weight: 500;
     font-size: 20px;
@@ -378,7 +414,7 @@ body {
 
 .portfolio-link-title {
     margin-bottom: 8px;
-    color: #2E2F42;
+    color: var(--navy-blue);
 
     font-weight: 500;
     font-size: 20px;
@@ -387,7 +423,7 @@ body {
 }
 
 .portfolio-link-text {
-    color: #434455;
+    color: var(--slate);
 
     font-size: 16px;
     line-height: 1.5;
@@ -397,14 +433,14 @@ body {
 /* Футер */
 .footer {
     display: flex;
-    background-color: #2E2F42;
+    background-color: var(--grey);
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
 .footer-logo-link { 
     display: inline-block;
-    color: #4D5AE5;
+    color: var(--iris);
     margin-bottom: 16px;
     
     font-family: Raleway, sans-serif;
@@ -417,10 +453,10 @@ body {
 }
 
 .footer-logo-accent {
-    color: #F4F4FD;
+    color: var(--cloud);
 }
 
 .footer-text {
-    color: #F4F4FD;
+    color: var(--cloud);
     max-width: 264px;
 }
