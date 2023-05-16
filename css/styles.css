@@ -160,12 +160,13 @@ body {
 
 /* Главная секция 1-й страницы */
 
-.hero 
+.hero {
+    background: var(--navy-blue);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/page-1/hero-img.jpg);
+}
 
 .hero-wrap {
-    background: var(--navy-blue);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/page-1/hero-img.jpg);
-
     padding: 188px 0;
     text-align: center;
 }
@@ -317,27 +318,28 @@ body {
     margin-bottom: 8px;
 }
 
-.team-socials-list {
+.team-social-list {
     display: flex;
     justify-content: center;
     gap: 24px;
 }
 
-.team-socials-item 
-
-.team-social-wrap {
+.team-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--iris) ;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 50%; 
 }
 
-.team-social-wrap:hover,
-.team-social-wrap:focus {
-    background-color: var(--green);
+.team-social-link:hover,
+.team-social-link:focus {
+    background-color: var(--ocean);
 }
 .team-social-icon {
-    color: var(--cloud);
+    fill: var(--cloud);
 }
 
 
@@ -433,6 +435,8 @@ body {
 /* Футер */
 .footer {
     display: flex;
+    align-content: center;
+    gap: 120px;
     background-color: var(--grey);
     padding-top: 100px;
     padding-bottom: 100px;
@@ -459,4 +463,39 @@ body {
 .footer-text {
     color: var(--cloud);
     max-width: 264px;
+}
+
+.center-wrap {
+    display: flex;
+    justify-content: center;
+    max-width: 208px;
+}
+
+.center-wrap .footer-text {
+    font-weight: 500;
+}
+
+.footer-media-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.footer-media-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--iris);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.footer-media-link:hover,
+.footer-media-link:focus {
+    background-color: var(--ocean);
+}
+
+.footer-media-icon {
+    fill: var(--cloud);
 }
