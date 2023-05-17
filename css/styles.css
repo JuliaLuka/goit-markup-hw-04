@@ -257,11 +257,13 @@ body {
 
     width: 264px;
     height: 112px;
+    border-radius: 4px;
 
     background-color: var(--cloud);
     margin-bottom: 8px;
 }
 .features-item-icon 
+
 
 
  /* We doing */
