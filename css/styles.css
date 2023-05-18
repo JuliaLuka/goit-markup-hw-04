@@ -481,6 +481,12 @@ body {
     display: flex;
     background-color: var(--grey);
 }
+.footer-wrap {
+    display: flex;
+}
+.footer-wrap-left {
+    margin-right: 120px;
+}
 
 .footer-logo-link { 
     display: inline-block;
@@ -505,15 +511,14 @@ body {
     max-width: 264px;
 }
 
-/* .center-wrap {
-    display: flex;
-    justify-content: center;
-    max-width: 208px;
-}
-
-.center-wrap .footer-text {
+.footer-wrap-center .footer-text {
+    margin-bottom: 16px;
     font-weight: 500;
-} */
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    
+}
 
 .footer-media-list {
     display: flex;
