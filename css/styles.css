@@ -357,9 +357,10 @@ body {
 .customers-section-title {
     margin-bottom: 72px;
 
+    color: var(--grey);
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11;
+    line-height: 1.1;
     font-size: 36px;
 
     text-align: center;
@@ -368,19 +369,34 @@ body {
     display: flex;
     gap: 24px;
 }
-.customers-section-item {
-    width: 168px;
-    height: 88px;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
 
-    display: flex;
+.customers-soc-link {
+    display: block;
     justify-content: center;
     align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    color: var(--light-slate);
+
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+
+.customers-soc-link:hover,
+.customers-soc-link:focus {
+    border-color: var(--ocean);
+    color: var(--ocean);
+}
+
+.customers-section-item {
     margin: 0 auto;
 }
 .customers-soc-icon {
-    fill: var(--light-slate);
+    width: 104px;
+    height: 56px;
+    fill: currentColor;
 }
 
 
@@ -443,12 +459,15 @@ body {
     width: calc((100% - 48px) / 3);
 }
 
-.portfolio-item:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+.portfolio-link {
+    display: block;
+
+    padding: 24px 0;
 }
 
-.portfolio-link {
-    padding: 24px 0;
+.portfolio-link:hover,
+.portfolio-link:focus { 
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-link-wrap {
@@ -483,6 +502,7 @@ body {
 }
 .footer-wrap {
     display: flex;
+    align-items: baseline;
 }
 .footer-wrap-left {
     margin-right: 120px;
@@ -513,6 +533,9 @@ body {
 
 .footer-wrap-center .footer-text {
     margin-bottom: 16px;
+
+    color: var(--white);
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -523,7 +546,7 @@ body {
 .footer-media-list {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 16px;
 }
 
 .footer-media-link {
@@ -538,7 +561,7 @@ body {
 
 .footer-media-link:hover,
 .footer-media-link:focus {
-    background-color: var(--ocean);
+    background-color: var(--green);
 }
 
 .footer-media-icon {
