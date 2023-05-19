@@ -176,6 +176,7 @@ body {
 
 .hero {
     max-width: 1440px;
+    margin: 0 auto;
 
     background: var(--navy-blue);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -266,11 +267,12 @@ body {
     background-color: var(--cloud);
     margin-bottom: 8px;
 }
-.features-item-icon 
+ 
 
 
 
  /* We doing */
+ 
 .we-doing-section {
     padding-bottom: 120px;
 }
@@ -635,7 +637,7 @@ body {
 
 } */
 
-.backdrop {
+/* .backdrop {
     background-color: rgba(46, 47, 66, 0.4);
     position: fixed;
 
@@ -654,4 +656,4 @@ body {
 
 .modal {}
 
-.modal-close-btn {}
+.modal-close-btn {} */
